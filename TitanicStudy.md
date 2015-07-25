@@ -1,7 +1,7 @@
 Titanic Study of Survival
 ========================================================
 author: David Mott
-date: Fri Jul 24 23:59:19 2015
+date: Sat Jul 25 00:04:47 2015
 
 Introduction
 ========================================================
