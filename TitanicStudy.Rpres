@@ -3,26 +3,31 @@ Titanic Study of Survival
 author: David Mott
 date: `r date()`
 
-First Slide
+Introduction
 ========================================================
 
-For more details on authoring R presentations click the
-**Help** button on the toolbar.
+What were the chances of survival on the Titanic? 
+Does it matter if you were in 1st Class?  Gender?  How much your ticket was? 
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+Now you can find out.  
 
-Slide With Code
+- View a semi-complete dataset of people who were on the titanic. 
+- Nice histograph graphs, mean data and separate of Survived vs Not survived.  
+- Fast interface.  Fully functional. 
+- Narrow down data elements to determine survival rate. 
+
+Note:  There were over 2000 passengers on the Titanic.  Data set only has 891 referenced.  
+
+Nice Plots and proper statistics
 ========================================================
 
-```{r}
-summary(cars)
+```{r echo=FALSE}
+dt <- read.csv("titanic.csv")
+survived <- subset(dt, Survived==1)
+hist(survived$Age, xlab='age', col='lightblue', main="Survived")
 ```
 
-Slide With Plot
+More information?
 ========================================================
 
-```{r, echo=FALSE}
-plot(cars)
-```
+Github presentation: 

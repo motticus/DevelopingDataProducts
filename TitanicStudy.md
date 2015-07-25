@@ -1,37 +1,29 @@
 Titanic Study of Survival
 ========================================================
 author: David Mott
-date: Fri Jul 24 22:47:57 2015
+date: Sat Jul 25 00:04:47 2015
 
-First Slide
+Introduction
 ========================================================
 
-For more details on authoring R presentations click the
-**Help** button on the toolbar.
+What were the chances of survival on the Titanic? 
+Does it matter if you were in 1st Class?  Gender?  How much your ticket was? 
 
-- Bullet 1
-- Bullet 2
-- Bullet 3
+Now you can find out.  
 
-Slide With Code
+- View a semi-complete dataset of people who were on the titanic. 
+- Nice histograph graphs, mean data and separate of Survived vs Not survived.  
+- Fast interface.  Fully functional. 
+- Narrow down data elements to determine survival rate. 
+
+Note:  There were over 2000 passengers on the Titanic.  Data set only has 891 referenced.  
+
+Nice Plots and proper statistics
 ========================================================
 
+![plot of chunk unnamed-chunk-1](TitanicStudy-figure/unnamed-chunk-1-1.png) 
 
-```r
-summary(cars)
-```
-
-```
-     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  
-```
-
-Slide With Plot
+More information?
 ========================================================
 
-![plot of chunk unnamed-chunk-2](TitanicStudy-figure/unnamed-chunk-2-1.png) 
+Github presentation: 
