@@ -9,7 +9,13 @@ Introduction
 What were the chances of survival on the Titanic? 
 Does it matter if you were in 1st Class?  Gender?  How much your ticket was? 
 
+
+
+
 Now you can find out.  
+
+How?
+=======================================================
 
 - View a semi-complete dataset of people who were on the titanic. 
 - Nice histograph graphs, mean data and separate of Survived vs Not survived.  
@@ -34,4 +40,9 @@ http://bit.ly/1IoUYnJ
 
 Dataset location:
 http://bit.ly/1D5FH41
+
+Rpubs:
+http://bit.ly/1OG5qIu
+
+You can also run code on the command line using runGitHub.  
 
