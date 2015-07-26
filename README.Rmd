@@ -9,6 +9,8 @@ The dataset was obtained via [KDNuggets](http://www.kdnuggets.com/datasets/index
 The github of the code is here: [Github](https://github.com/motticus/DevelopingDataProducts).
 The presentation is here: [Presentation](http://motticus.github.io/DevelopingDataProducts/TitanicStudy.html#/).
 
+The application is here: [Application](https://zagnut.shinyapps.io/DataProducts).
+
 I found the dataset interesting although I am unsure of the source and whether it is reliable.  
 
 ## Caveats

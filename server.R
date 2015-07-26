@@ -1,11 +1,21 @@
+# server.R The backend portion of Shiny
+
+#load libraries
 library(shiny)
 library(data.table)
+
+#load dataset
 dt <- read.csv("titanic.csv")
 
+#temporary dataset
 dataset <- dt
 
+#Shiny server load. 
 shinyServer(
   function(input, output, session) {
+    
+    #The reactive step.  This step is in one reactive function because all of them apply to one action. 
+    #This narrows the scope of the dataset. 
     dataset <- reactive({
       dt <- subset(dt, dt$Age > input$ageSample[1])
       dt <- subset(dt, dt$Age < input$ageSample[2])
@@ -20,8 +30,10 @@ shinyServer(
       dt <- dt[(dt$Survived %in% input$survivedSample),]
     })
     
-    
+    #load datatable 
     output$table <- renderDataTable(dt)
+    
+    #all of the various items to be rendered as a plot or text value. 
     output$survivalValue <- renderPlot({
       survived <- subset(dataset(), Survived==1)
       hist(survived$Age, xlab='age', col='lightblue', main="Survived")

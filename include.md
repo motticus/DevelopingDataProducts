@@ -7,6 +7,10 @@ The dataset was obtained via [KDNuggets](http://www.kdnuggets.com/datasets/index
 The github of the code is here: [Github](https://github.com/motticus/DevelopingDataProducts).
 The presentation is here: [Presentation](http://motticus.github.io/DevelopingDataProducts/TitanicStudy.html#/).
 
+Here is an rpubs of this document: [Rpubs](http://rpubs.com/motticus/TitanicStudy).
+
+Here is the shinyapps.io application step: [Application](https://zagnut.shinyapps.io/DataProducts).
+
 I found the dataset interesting although I am unsure of the source and whether it is reliable.  
 
 One caveat is list only has 891 objects while the total number of passengers on the Titanic exceeded 2000.  I have seen the dataset in other areas presumably shared and the list had the same number of objects in that set.  
@@ -15,7 +19,7 @@ The application framework I chose is to narrow down and exclude pieces of data y
 
 I use a simple histogram of the number of survivors associated with age of the narrowed down dataset you wish to study. 
 
-Here is an rpubs of this document: [Rpubs](http://rpubs.com/motticus/TitanicStudy).
+
 
 Here is the command to run and reproduce the Application:
 

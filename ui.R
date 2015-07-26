@@ -1,28 +1,23 @@
+# ui.R
+# This is the Shiny UI portion of the application.  
+
+#load libraries. 
 library(shiny)
 library(rCharts)
-#shinyUI(
-#  pageWithSidebar(
-#    headerPanel("Diabetes Prediction"),
-#    sidebarPanel(
-#    numericInput('glucose', 'Glucose mg/dl', 90, min=50, max=200, step=5),
-#   submitButton('Submit')
-#    ),
-#  mainPanel(
-#  h3('Results of prediction'),
-#  h4('You entered'),
-#  verbatimTextOutput("inputValue"),
-#  h4('Which resulted in a prediction of '),
-##  verbatimTextOutput("prediction")
-#  )
-#)
-#)
 library(data.table)
+
+#Read data file.  This is to generate a proper front end with the proper values. 
 dt <- read.csv("titanic.csv")
 
 shinyUI(
   navbarPage("Titanic Survivor Log",
+             
+             #The plot tab. 
              tabPanel("Plot",
+                      #plot sidebar
                       sidebarPanel(
+                        
+                        #Slider input based on specific values within the data set. 
                         sliderInput('ageSample', 'Choose Age Range', min=min(dt$Age), max=max(dt$Age, na.rm=TRUE),
                                     value=c(min(dt$Age), max(dt$Age, na.rm=TRUE)), step=0.1, round=0),
                         checkboxGroupInput("sexSample", "Sex:",
@@ -45,7 +40,7 @@ shinyUI(
                       mainPanel(
                         tabsetPanel(
                           
-                          # Data by state
+                          # Survival Sub Tab
                           tabPanel(p(icon("line-chart"), "Survival"),
                                    column(7,
                                    plotOutput("survivalValue"), 
@@ -67,7 +62,8 @@ shinyUI(
                                    textOutput("meansurvivalfare")
                                    )
                                    
-                          ),                     
+                          ),         
+                          #Those who didnt survive subtab
                           tabPanel(p(icon("line-chart"), "Not Survival"),
                                    column(7,
                                           plotOutput("notSurvivalValue"),
@@ -90,7 +86,7 @@ shinyUI(
                                    )
                                    
                           ),                                
-                          # Data 
+                          # Data Table
                           tabPanel(p(icon("table"), "Data"),
                                    dataTableOutput(outputId="table"),
                                    downloadButton('downloadData', 'Download')
@@ -99,7 +95,7 @@ shinyUI(
                       )
                       
              ),
-             
+             #About tab
              tabPanel("About",
                       mainPanel(
                         includeMarkdown("include.md")
