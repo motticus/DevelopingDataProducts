@@ -32,8 +32,8 @@ Nice Plots and proper statistics
 More information?
 ========================================================
 
-Github presentation: 
-http://bit.ly/1DFQd3J
+RPubs Presentation: 
+http://bit.ly/1IliTQE
 
 Github code:
 http://bit.ly/1IoUYnJ 
@@ -41,8 +41,11 @@ http://bit.ly/1IoUYnJ
 Dataset location:
 http://bit.ly/1KrOjeP
 
-Rpubs:
+Rpubs Document:
 http://bit.ly/1OG5qIu
+
+ShinyApps.io:
+http://bit.ly/1LHeG0E
 
 You can also run code on the command line using runGitHub.  
 
