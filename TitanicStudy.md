@@ -1,7 +1,7 @@
 Titanic Study of Survival
 ========================================================
 author: David Mott
-date: Sat Jul 25 00:04:47 2015
+date: Sat Jul 25 20:37:43 2015
 
 Introduction
 ========================================================
@@ -27,3 +27,11 @@ More information?
 ========================================================
 
 Github presentation: 
+http://bit.ly/1DFQd3J
+
+Github code:
+http://bit.ly/1IoUYnJ 
+
+Dataset location:
+http://bit.ly/1D5FH41
+
